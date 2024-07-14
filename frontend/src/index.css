@@ -1,0 +1,454 @@
+@font-face{
+  font-family: 'DicSans';
+  src: url('frontend/src/assets/font/fonnts.com-DicSans_ExtraBold.otf');
+}
+.figtree-font {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgb(103, 225, 255);
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  background: rgb(103, 151, 255);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+.first-content img{
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+.Cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 20%;
+  gap: 3rem;
+}
+.navbar{
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.color2{
+  color: skyblue;
+}
+.nav-items h1{
+  cursor: pointer;
+}
+.nav-items ul{
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.nav-items ul li{
+  &:hover{
+    color: skyblue;
+  }
+}
+.main-component{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/background5.jpg');
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.home-text{
+  padding: 0;
+  margin: 0;
+  line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-text h1{
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+}
+.home-text p{
+  font-family: "Figtree", sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.button-ctr button{
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  /* border: none; */
+  color: transparent;
+  cursor: pointer;
+  color: black;
+  border-radius: 15px;
+}
+.button-ctr{
+  display: flex;
+  gap: 2rem;
+}
+.top-achivements{
+  
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+
+}
+.subtexts{
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 40px;
+  text-align: center;
+}
+.section{
+  color: white;
+  background-color: black;
+}
+.second-content span{
+  text-align: center;
+}
+.home-main-text h1{
+  text-align: start;
+}
+.modal , .modal2{
+  border-radius: 15px;
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  background-color: black ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal2{
+  top: 130%;
+  background-color: white;
+}
+.close{
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+.login-form-cntnr{
+  display: flex;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  padding: 50px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.inputContainer {
+  background-color: rgba(255, 0, 0, 0);
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.fInput {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid rgb(48, 45, 45);
+  background-color: black;
+  padding: 10px;
+  color: white;
+  transition: .1s;
+  position: absolute;
+}
+
+.fInput:focus {
+  border: 1px rgb(0, 136, 255) solid;
+  outline: none;
+}
+
+.fInput:focus::placeholder {
+  color: rgb(0, 136, 255);
+}
+
+.fInput.email {
+  z-index: 1;
+}
+
+.fInput.pass:focus {
+  z-index: 2;
+}
+
+.submit {
+  width: 100%;
+  top: 60px;
+  padding: 7px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+  position: absolute;
+}
+
+.submit:focus + .email {
+  display: none;
+}
+
+.login {
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px 0;
+  position: absolute;
+  top: 90px;
+  left: 55px
+}
+
+.submit:hover {
+  opacity: .9;
+}
+
+.forget {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 1PX solid rgba(255, 255, 255, 0.151);
+  margin-top: 15px;
+  padding: 7px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 50px;
+}
+
+.forget:hover {
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+.con {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 30px;
+  color: rgb(111, 103, 103);
+  font-size: 13px;
+  font-family: sans-serif;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.con a {
+  color: rgb(0, 136, 255);
+}
+.modal2-heading, .modal2-content{
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
